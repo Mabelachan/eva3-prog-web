@@ -5,31 +5,33 @@
 {% endblock %}
 
 {% block content %}
-<div class="contenedor-formulario">
-    <h2>Promedio de Notas</h2>
+<div class="contenedor">
+    <div class="contenedor-formulario">
+        <h2>Promedio de Notas</h2>
 
-    <form method="post" class="formulario">
-        <label for="num1">Nota 1:</label>
-        <input type="number" name="nota1" min="10" max="70" id="num1" required>
+        <form method="post" class="formulario">
+            <label for="num1">Nota 1:</label>
+            <input type="number" name="nota1" min="10" max="70" id="num1" required>
 
-        <label for="num2">Nota 2:</label>
-        <input type="number" name="nota2" min="10" max="70" id="num2" required>
+            <label for="num2">Nota 2:</label>
+            <input type="number" name="nota2" min="10" max="70" id="num2" required>
 
-        <label for="num3">Nota 3:</label>
-        <input type="number" name="nota3" min="10" max="70" id="num3" required>
+            <label for="num3">Nota 3:</label>
+            <input type="number" name="nota3" min="10" max="70" id="num3" required>
 
-        <label for="asistencia">Asistencia (%):</label>
-        <input type="number" name="asistencia" min="0" max="100" id="asistencia" required>
+            <label for="asistencia">Asistencia (%):</label>
+            <input type="number" name="asistencia" min="0" max="100" id="asistencia" required>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+        </form>
 
-   <div class="resultado">
-        {% if resultado %}
-            <p>Promedio: {{ resultado.promedio }}</p>
-            <p>Estado: {{ resultado.estado }}</p>
-        {% endif %}
-   </div>
+       <div class="resultado">
+            {% if resultado %}
+                <p>Promedio: {{ resultado.promedio }}</p>
+                <p>Estado: {{ resultado.estado }}</p>
+            {% endif %}
+       </div>
+    </div>
 </div>
 
 

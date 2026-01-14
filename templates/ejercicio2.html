@@ -5,28 +5,30 @@
 {% endblock %}
 
 {% block content %}
-<div class="contenedor-formulario">
-    <h2>Escribe 3 nombres</h2>
+<div class="contenedor">
+    <div class="contenedor-formulario">
+        <h2>Escribe 3 nombres</h2>
 
-    <form method="post" class="formulario">
+        <form method="post" class="formulario">
 
-        <label for="nom1">Nombre 1:</label>
-        <input type="text" name="nombre1" id="nom1" required>
+            <label for="nom1">Nombre 1:</label>
+            <input type="text" name="nombre1" id="nom1" required>
 
-        <label for="nom2">Nombre 2:</label>
-        <input type="text" name="nombre2" id="nom2" required>
+            <label for="nom2">Nombre 2:</label>
+            <input type="text" name="nombre2" id="nom2" required>
 
-        <label for="nom3">Nombre 3:</label>
-        <input type="text" name="nombre3" id="nom3" required>
+            <label for="nom3">Nombre 3:</label>
+            <input type="text" name="nombre3" id="nom3" required>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+        </form>
 
-    <div class="resultado">
-        {% if resultado %}
-            <p>Nombre más largo: {{ resultado.nombre }}</p>
-            <p>Cantidad de caracteres: {{ resultado.cantidad }}</p>
-        {% endif %}
+        <div class="resultado">
+            {% if resultado %}
+                <p>Nombre más largo: {{ resultado.nombre }}</p>
+                <p>Cantidad de caracteres: {{ resultado.cantidad }}</p>
+            {% endif %}
+        </div>
     </div>
 </div>
 

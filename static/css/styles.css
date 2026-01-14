@@ -118,6 +118,11 @@ main {
     height: 100%;
 }
 
+.contenedor{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .contenedor-formulario{
     background-color: #d7d7f5;
     border-radius: 8px;
